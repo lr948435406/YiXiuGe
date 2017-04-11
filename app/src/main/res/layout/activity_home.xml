@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:padding="5dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="哈尔滨"
+                android:textColor="#00cccc"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/home_jiantou" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="一修哥"
+            android:textColor="#00cccc"
+            android:textSize="23sp"
+            android:layout_marginRight="35dp"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/rentou"
+            android:layout_marginRight="5dp"
+            />
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <com.youth.banner.Banner
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/banner"
+            android:scaleType="fitXY"
+            />
+
+    </com.youth.banner.Banner>
+
+
+
+        >
+    <!--手机维修开始-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/jianbian"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_marginBottom="12dp"
+                    android:src="@mipmap/home_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机"
+                        android:textColor="#6b6b6b"
+                        android:textSize="23sp" />
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/home_arrows_right"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/home_wrench_right" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:text="mobile"
+                    android:textColor="#e4e4e4"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--手机维修结束-->
+        <!--电脑维修开始-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@mipmap/jianbian"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical"
+               >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="70dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@mipmap/home_arrows_left"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/home_wrench_left" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="电脑"
+                        android:textColor="#6b6b6b"
+                        android:textSize="23sp" />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="left"
+                    android:text="computer"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#e4e4e4"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/home_computer" />
+            </LinearLayout>
+        </LinearLayout>
+         <!--电脑维修结束-->
+
+        <!--家电维修开始-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@mipmap/jianbian">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/home_washer"
+                    android:scaleType="centerCrop"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/home_cooker"
+                    android:layout_marginTop="47dp"
+                    android:layout_marginLeft="50dp"
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/imageView"
+                    android:scaleType="matrix" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginBottom="12dp"
+                android:padding="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="家电"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="#6b6b6b"
+                        android:textSize="23sp" />
+
+                    <FrameLayout
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@mipmap/home_arrows_right"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@mipmap/home_wrench_right" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="right"
+                    android:text="appliance"
+                    android:textColor="#e4e4e4"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+     <!--家电维修结束-->
+</LinearLayout>
+
+
