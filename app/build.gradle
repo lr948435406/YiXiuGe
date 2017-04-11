@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.zykj.yixiuge"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //阿里巴巴 JSON解析依赖包
+    compile 'com.alibaba:fastjson:1.2.31'
+//LOG日志清晰查看版依赖包
+    compile 'com.orhanobut:logger:1.15'
+//鲁班图片压缩依赖包
+    compile 'top.zibin:Luban:1.0.9'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+//xutils 工具类依赖包
+    compile 'org.xutils:xutils:3.4.0'
+//自动生成控件初始化及ViewHolder类的依赖包         俗称：黄牛倒
+    compile 'com.jakewharton:butterknife:7.0.1'
+//GalleryFinal图片选择器依赖包
+    compile 'cn.finalteam:galleryfinal:1.4.8.7'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+//Banner  图片轮播依赖包
+    compile 'com.youth.banner:banner:1.4.9'
+//百度地图依赖包
+
+//上拉加载，下拉刷新 依赖包
+    compile 'com.huxq17.xrefreshview:xrefreshview:3.6.5'
+
+}
