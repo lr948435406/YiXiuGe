@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:lr="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/background_q"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        >
+        <com.zykj.widget.TopBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            lr:leftBackground="@mipmap/back"
+            lr:titleText="地址管理"
+            lr:titleTextColor="#00cccc"
+            lr:titleTextSize="12sp"
+            android:paddingLeft="20dp"
+            ></com.zykj.widget.TopBar>
+    </LinearLayout>
+    <include layout="@layout/include_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        >
+    <FrameLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="100dp"
+        android:layout_gravity="center_vertical"
+        android:background="@mipmap/add_quan"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/top"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:textSize="17sp"
+            android:text="新增地址"
+            android:textColor="#bcbcbc"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@mipmap/hui_line"
+        ></View>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+</LinearLayout>
