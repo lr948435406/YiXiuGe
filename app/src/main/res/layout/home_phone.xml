@@ -24,7 +24,7 @@
     <!--手机品牌选择开始-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:background="#FFFFFF"
         android:layout_marginTop="3dp"
         android:orientation="horizontal"
@@ -72,7 +72,7 @@
     <!--手机型号选择开始-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
@@ -120,7 +120,7 @@
     <!--手机故障选择开始-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_height="50dp"
         android:background="#FFFFFF"
         android:layout_marginTop="5dp"
         android:orientation="horizontal"
@@ -183,4 +183,41 @@
             android:layout_marginLeft="17dp"
             />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        >
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bottom"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/center"
+                android:layout_gravity="center"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/top"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_yes"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="确 认"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
 </LinearLayout>
