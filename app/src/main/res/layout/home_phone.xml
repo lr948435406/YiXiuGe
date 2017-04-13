@@ -34,13 +34,13 @@
             android:layout_height="wrap_content"
             android:text="品牌"
             android:textColor="#6b6b6b"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             />
         <ImageView
             android:layout_width="2dp"
-            android:layout_height="45dp"
+            android:layout_height="40dp"
             android:src="@mipmap/v_lin"
             android:layout_marginLeft="15dp"
             android:layout_gravity="center_vertical"
@@ -82,13 +82,13 @@
             android:layout_height="wrap_content"
             android:text="型号"
             android:textColor="#6b6b6b"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             />
         <ImageView
             android:layout_width="2dp"
-            android:layout_height="45dp"
+            android:layout_height="40dp"
             android:src="@mipmap/v_lin"
             android:layout_marginLeft="15dp"
             android:layout_gravity="center_vertical"
@@ -130,13 +130,13 @@
             android:layout_height="wrap_content"
             android:text="故障"
             android:textColor="#6b6b6b"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="20dp"
             />
         <ImageView
             android:layout_width="2dp"
-            android:layout_height="45dp"
+            android:layout_height="40dp"
             android:src="@mipmap/v_lin"
             android:layout_marginLeft="15dp"
             android:layout_gravity="center_vertical"
