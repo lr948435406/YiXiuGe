@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:lr="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/background_q"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        >
+        <com.zykj.widget.TopBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            lr:leftBackground="@mipmap/back"
+            lr:titleText="更换手机号"
+            lr:titleTextColor="#00cccc"
+            lr:titleTextSize="12sp"
+            android:paddingLeft="20dp"
+            ></com.zykj.widget.TopBar>
+    </LinearLayout>
+    <include layout="@layout/include_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:textSize="18sp"
+            android:text="手机号"
+            android:textColor="#6b6b6b"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入您的手机号"
+            android:textColorHint="#bcbcbc"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@mipmap/hui_line"
+        ></View>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/button_yes"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="确 认"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+</LinearLayout>
