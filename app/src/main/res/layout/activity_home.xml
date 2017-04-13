@@ -74,10 +74,8 @@
 
     </com.youth.banner.Banner>
 
-
-
         >
-    <!--手机维修开始-->
+    <!--手机维修Start-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -152,8 +150,8 @@
                     android:textSize="30sp" />
             </LinearLayout>
         </LinearLayout>
-        <!--手机维修结束-->
-        <!--电脑维修开始-->
+        <!--手机维修End-->
+        <!--电脑维修Start-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -226,9 +224,9 @@
                     android:src="@mipmap/home_computer" />
             </LinearLayout>
         </LinearLayout>
-         <!--电脑维修结束-->
+         <!--电脑维修End-->
 
-        <!--家电维修开始-->
+        <!--家电维修Start-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -316,7 +314,7 @@
                     android:textSize="30sp" />
             </LinearLayout>
         </LinearLayout>
-     <!--家电维修结束-->
+     <!--家电维修End-->
 </LinearLayout>
 
 

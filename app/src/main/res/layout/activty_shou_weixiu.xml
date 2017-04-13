@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="55dp">
+     <ImageView
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:src="@mipmap/zuojian"
+         android:layout_marginTop="14dp"
+         android:layout_marginLeft="15dp"
+         android:padding="5dp"/>
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:text="手机维修"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="7dp"
+           android:textSize="30sp"
+           android:gravity="center"
+           android:textColor="#55dbdb"
+           />
+   </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/heng_hui_line">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:text="品牌"
+                android:padding="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#6b6b6b"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                 />
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/xiaoshu_line"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择你的手机品牌"
+                android:padding="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/editText"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/you_jiantou"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/heng_hui_line">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:text="型号"
+                android:padding="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#6b6b6b"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                />
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/xiaoshu_line"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择你的手机型号"
+                android:padding="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/editText1"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/you_jiantou"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/heng_hui_line">
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+
+            <TextView
+                android:text="故障"
+                android:padding="20dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#6b6b6b"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                />
+            <ImageView
+                android:layout_width="3dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/xiaoshu_line"
+                />
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请选择你的手机故障点"
+                android:padding="2dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="40dp"
+                android:id="@+id/editText2"
+                android:textSize="20sp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/you_jiantou"
+                android:layout_marginRight="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/heng_hui_line">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="12dp"
+                android:hint="请对您手机的故障进行简单的描述"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/heng_hui_line">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#ffffff"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</LinearLayout>
