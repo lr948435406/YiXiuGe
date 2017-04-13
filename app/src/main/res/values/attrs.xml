@@ -9,11 +9,7 @@
         <attr name="titleTextColor" format="color"/>
 
         <!--左侧按钮-->
-        <attr name="leftText" format="string"/>
-        <attr name="leftTextSize" format="dimension"/>
-        <attr name="leftTextColor" format="color"/>
         <attr name="leftBackground" format="color|reference"/>
-
         <!--右侧按钮-->
         <attr name="rightText" format="string"/>
         <attr name="rightTextSize" format="dimension"/>

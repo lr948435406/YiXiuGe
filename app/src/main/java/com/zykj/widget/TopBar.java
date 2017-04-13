@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
+import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -23,9 +24,6 @@ public class TopBar extends RelativeLayout{
     private  float  titleTextSize;
     private  int    titleTextColor;
     //左侧按钮
-    private  String leftText;
-    private  float  leftTextSize;
-    private  int    leftTextColor;
     private Drawable leftBackground;
 
     //右侧按钮
@@ -35,7 +33,7 @@ public class TopBar extends RelativeLayout{
     private Drawable rightBackground;
     //控件
     private TextView title;
-    private TextView left;
+    private ImageView left;
     private TextView right;
     private Context context;
     public TopBar(Context context) {
@@ -51,9 +49,6 @@ public class TopBar extends RelativeLayout{
         titleTextSize=td.getDimension(R.styleable.TopBar_titleTextSize,0);
         titleTextColor=td.getColor(R.styleable.TopBar_titleTextColor,0);
         //获取左侧按钮的属性
-        leftText=td.getString(R.styleable.TopBar_leftText);
-        leftTextSize=td.getDimension(R.styleable.TopBar_leftTextSize,0);
-        leftTextColor=td.getColor(R.styleable.TopBar_leftTextColor,0);
         leftBackground=td.getDrawable(R.styleable.TopBar_leftBackground);
         //获取右侧按钮的属性
         rightText=td.getString(R.styleable.TopBar_rightText);
@@ -62,7 +57,7 @@ public class TopBar extends RelativeLayout{
         rightBackground=td.getDrawable(R.styleable.TopBar_rightBackground);
         //  创建控件
         title=new TextView(context);
-        left=new TextView(context);
+        left=new ImageView(context);
         right=new TextView(context);
 
         // 把所有属性设置到控件上
@@ -70,10 +65,9 @@ public class TopBar extends RelativeLayout{
         title.setText(titleText);
         title.setTextSize(titleTextSize);
         title.setTextColor(titleTextColor);
+        title.setGravity(Gravity.CENTER);
         //  设置 left左侧属性
-        left.setText(leftText);
-        left.setTextColor(leftTextColor);
-        left.setTextSize(leftTextSize);
+
         left.setBackgroundDrawable(leftBackground);
         //  设置 right右侧属性
         right.setText(rightText);
@@ -89,11 +83,13 @@ public class TopBar extends RelativeLayout{
         addView(title,titleParams);
 
         LayoutParams  leftParams =new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        leftParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT); //左侧位置
+        leftParams.addRule(RelativeLayout.ALIGN_PARENT_LEFT|RelativeLayout.CENTER_VERTICAL); //左侧位置
+        leftParams.width=30;
+        leftParams.height=40;
         addView(left,leftParams);
 
         LayoutParams  rightParams =new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        rightParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT); //左侧位置
+        rightParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT|RelativeLayout.CENTER_VERTICAL); //右侧位置
         addView(right,rightParams);
         // 调用点击函数
         left.setOnClickListener(new OnClickListener() {
