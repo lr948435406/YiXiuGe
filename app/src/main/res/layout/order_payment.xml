@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_q"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <com.zykj.widget.TopBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="17dp"
+            android:paddingLeft="20dp"
+            lr:leftBackground="@mipmap/back"
+
+            lr:titleText="订单支付"
+            lr:titleTextColor="#00cccc"
+            lr:titleTextSize="12sp"></com.zykj.widget.TopBar>
+    </LinearLayout>
+    <include layout="@layout/include_line"></include>
+
+</LinearLayout>

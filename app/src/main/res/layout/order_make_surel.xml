@@ -90,17 +90,17 @@
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@mipmap/huang_banzi"/>
+                        android:src="@mipmap/hui_banzi"/>
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@mipmap/huang_banzi"/>
+                        android:src="@mipmap/hui_banzi"/>
                     <ImageView
                         android:layout_width="15dp"
                         android:layout_height="15dp"
                         android:layout_marginLeft="5dp"
-                        android:src="@mipmap/huang_banzi"/>
+                        android:src="@mipmap/hui_banzi"/>
                 </LinearLayout>
 
             </LinearLayout>
