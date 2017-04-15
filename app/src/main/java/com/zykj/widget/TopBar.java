@@ -73,6 +73,7 @@ public class TopBar extends RelativeLayout{
         right.setText(rightText);
         right.setTextColor(rightTextColor);
         right.setTextSize(rightTextSize);
+        right.setGravity(Gravity.RIGHT);
         right.setBackgroundDrawable(rightBackground);
 
         //把控件设置到View中
@@ -89,7 +90,8 @@ public class TopBar extends RelativeLayout{
         addView(left,leftParams);
 
         LayoutParams  rightParams =new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT);
-        rightParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT|RelativeLayout.CENTER_VERTICAL); //右侧位置
+        rightParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT); //右侧位置
+        rightParams.topMargin=35;
         addView(right,rightParams);
         // 调用点击函数
         left.setOnClickListener(new OnClickListener() {
