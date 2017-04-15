@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_q"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+        <com.zykj.widget.TopBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="17dp"
+            android:paddingLeft="20dp"
+            lr:leftBackground="@mipmap/back"
+
+            lr:titleText="订单支付"
+            lr:titleTextColor="#00cccc"
+            lr:titleTextSize="12sp"></com.zykj.widget.TopBar>
+    </LinearLayout>
+    <include layout="@layout/include_line"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        android:background="@mipmap/bg_bai"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="70dp"
+                android:src="@mipmap/zhifuxiangqing_gou"
+                android:layout_height="70dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="订单支付成功"
+                android:textColor="#ff6633"
+                android:textSize="16sp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/dingdan_line"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="订单评价"
+                android:textColor="#bcbcbc"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/dingdan_line"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/huang_banzi"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/huang_banzi"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:src="@mipmap/hui_banzi"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@mipmap/hui_banzi"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="60dp"
+                android:src="@mipmap/hui_banzi"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_margin="35dp"
+            android:text="提交评价"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:background="@drawable/style_button"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+</LinearLayout>
