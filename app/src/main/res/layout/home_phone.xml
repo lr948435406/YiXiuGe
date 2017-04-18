@@ -48,6 +48,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/phone_pinpai"
             android:layout_marginLeft="15dp"
             >
             <TextView
@@ -56,6 +57,7 @@
                 android:textSize="17sp"
                 android:layout_weight="1"
                 android:textColor="#bcbcbc"
+                android:id="@+id/phone_tv_pinpai"
                 android:text="请选择您的手机品牌"
                 android:layout_gravity="center_vertical"
                 />
@@ -96,6 +98,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/phone_xinghao"
             android:layout_marginLeft="15dp"
             >
             <TextView
@@ -105,6 +108,7 @@
                 android:layout_weight="1"
                 android:textColor="#bcbcbc"
                 android:text="请选择您的手机型号"
+                android:id="@+id/phone_tv_xinghao"
                 android:layout_gravity="center_vertical"
                 />
             <ImageView
@@ -145,6 +149,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
+            android:id="@+id/phone_guzhang"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -153,6 +158,7 @@
                 android:layout_weight="1"
                 android:textColor="#bcbcbc"
                 android:text="请选择您的手机故障点"
+                android:id="@+id/phone_tv_guzhang"
                 android:layout_gravity="center_vertical"
                 />
             <ImageView
@@ -171,18 +177,18 @@
         android:background="#ffffff"
         android:layout_marginTop="2dp"
         >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17sp"
-
-            android:textColor="#bcbcbc"
-            android:text="请对您手机的故障进行简单描述"
-            android:layout_gravity="center_vertical"
-            android:layout_marginLeft="17dp"
-            />
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="17sp"
+    android:id="@+id/phone_et_miaoshu"
+    android:textColorHint="#bcbcbc"
+    android:background="@null"
+    android:hint="请对您手机的故障进行简单描述"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="17dp" />
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -193,6 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@mipmap/bottom"
+            android:id="@+id/phone_zhaopian"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="15dp"
             >
@@ -210,6 +217,7 @@
                 />
         </FrameLayout>
     </LinearLayout>
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -217,6 +225,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:text="确 认"
+        android:id="@+id/phone_bt_queren"
         android:textColor="#ffffff"
         android:textSize="18sp"
         />

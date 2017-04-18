@@ -8,19 +8,26 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name="com.zykj.application.MyApplication"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.zykj.activity.Test">
-            <intent-filter >
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-
+        <activity android:name="com.zykj.activity.home.Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-
+        <activity android:name="com.zykj.activity.home.HomePhone"/>
+        <activity android:name="com.zykj.activity.home.HomeAppliance"/>
+        <activity android:name="com.zykj.activity.home.HomeComputer"/>
+        <activity android:name="com.zykj.activity.personal.PersonalCenter"/>
+        <activity
+            android:name="com.zaaach.citypicker.CityPickerActivity"
+            android:theme="@style/CityPicker.NoActionBar"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <meta-data android:name="com.amap.api.v2.apikey"
+            android:value="8897cb481646911b0c7f349b50296a7b"/>
     </application>
 
 </manifest>
