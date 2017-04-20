@@ -10,18 +10,18 @@
     android:layout_height="50dp"
     android:background="#ffffff"
     >
+
     <com.zykj.widget.TopBar
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         lr:leftBackground="@mipmap/back"
         lr:titleText="电脑维修"
         lr:titleTextColor="#00cccc"
-        lr:titleTextSize="12sp"
+        lr:titleTextSize="10sp"
         android:paddingLeft="20dp"
         ></com.zykj.widget.TopBar>
 </LinearLayout>
-    <include layout="@layout/include_line"></include>
-    <!--电脑品牌选择开始-->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -48,12 +48,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/computer_pinpai"
             android:layout_marginLeft="15dp"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
+                android:id="@+id/computer_tv_pinpai"
                 android:layout_weight="1"
                 android:textColor="#bcbcbc"
                 android:text="请选择您的电脑品牌"
@@ -68,7 +70,10 @@
                 />
         </LinearLayout>
     </LinearLayout>
-     <!--电脑品牌选择结束-->
+
+    <include layout="@layout/include_line"></include>
+    <!--电脑品牌选择开始-->
+    <!--电脑品牌选择结束-->
     <!--电脑类型选择开始-->
     <LinearLayout
         android:layout_width="match_parent"
@@ -96,6 +101,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/computer_leixing"
             android:layout_marginLeft="15dp"
             >
             <TextView
@@ -103,6 +109,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
                 android:layout_weight="1"
+                android:id="@+id/computer_tv_leixing"
                 android:textColor="#bcbcbc"
                 android:text="请选择您的电脑类型"
                 android:layout_gravity="center_vertical"
@@ -144,6 +151,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:id="@+id/computer_xinghao"
             android:layout_marginLeft="15dp"
             >
             <TextView
@@ -152,6 +160,7 @@
                 android:textSize="17sp"
                 android:layout_weight="1"
                 android:textColor="#bcbcbc"
+                android:id="@+id/computer_tv_xinghao"
                 android:text="请选择您的电脑型号"
                 android:layout_gravity="center_vertical"
                 />
@@ -193,6 +202,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="15dp"
+            android:id="@+id/computer_guzhang"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -200,6 +210,7 @@
                 android:textSize="17sp"
                 android:layout_weight="1"
                 android:textColor="#bcbcbc"
+                android:id="@+id/computer_tv_guzhang"
                 android:text="请选择您的电脑故障点"
                 android:layout_gravity="center_vertical"
                 />
@@ -220,16 +231,16 @@
         android:layout_marginTop="2dp"
         >
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="17sp"
-
-            android:textColor="#bcbcbc"
-            android:text="请对您电脑的故障进行简单描述"
+            android:id="@+id/computer_et_miaoshu"
+            android:textColorHint="#bcbcbc"
+            android:background="@null"
+            android:hint="请对您电脑的故障进行简单描述"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="17dp"
-            />
+            android:layout_marginLeft="17dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -241,6 +252,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@mipmap/bottom"
+            android:id="@+id/computer_zhaopian"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="15dp"
             >
@@ -264,6 +276,7 @@
         android:background="@mipmap/button_yes"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:id="@+id/computer_bt_queren"
         android:text="确 认"
         android:textColor="#ffffff"
         android:textSize="18sp"

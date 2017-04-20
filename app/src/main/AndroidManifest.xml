@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zykj.yixiuge">
-    <!--图片轮播开始-->
+    <!--通用网络权限-->
     <uses-permission android:name="android.permission.INTERNET" />
+    <!--图片轮播开始-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <!--图片轮播结束-->
     <application

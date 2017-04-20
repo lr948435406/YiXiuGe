@@ -69,7 +69,6 @@ public class HomePhone extends MyActivity {
             }
         });
     }
-
     @OnClick({R.id.phone_pinpai, R.id.phone_xinghao, R.id.phone_guzhang, R.id.phone_zhaopian, R.id.phone_bt_queren})
     public void onViewClicked(View view) {
         switch (view.getId()) {
@@ -93,13 +92,11 @@ public class HomePhone extends MyActivity {
                                     mobileIndex = options1; // 当前选择的索引
                                 }
                             }).build();
-
                             //把lists 进行转换
                             List<String> strs = new ArrayList<String>();
                             for (MobileBean mb : lists) {
                                 strs.add(mb.getName());
                             }
-
                             //添加数据
                             opv.setPicker(strs, null, null);
                             //显示选择器
